@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<script>
+    let i;
+    let j;
+    let sot;
+    sot = "<table border = '1' width = '1000' cellspacing ='0' cellpadding = '3'>";
+    j = 2;
+    i = 1;
+
+    while (i < 10) {
+        sot = sot + "<tr>";
+        while (j < 10) {
+            sot = sot + "<td>" + j + "x" + i + " = " + i * j + "</td>";
+            j++;
+        }
+        sot = sot + "</tr>";
+        j = 2;
+        i++;
+    }
+    sot = sot + "<table>";
+    document.write(sot);
+</script>
+</body>
+</html>
